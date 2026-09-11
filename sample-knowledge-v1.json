@@ -1,0 +1,153 @@
+{
+  "schema": "agentos-knowledge-v1",
+  "release": "SAMPLE revision 1",
+  "reviewer": "Sample fixture author — fictional test only",
+  "exportedAt": "2026-09-10T00:00:00Z",
+  "document": {
+    "fileName": "sample-manual-v1.pdf",
+    "sha256": "f03a31a79dc039b2f488d9ad91f086a5f72f9b6e8ae5aae7679fe90f8aaf5191",
+    "pages": 9
+  },
+  "detectedHeadings": [
+    "AgentOS sample flight manual",
+    "FICTIONAL CONTENT - IMPORTER TEST ONLY",
+    "Escrow Analysis - Explaining the EA Statement",
+    "Escrow – Disbursements, Details, & Balances",
+    "Escrow Analysis – Customer Paying Shortage",
+    "Payment Shock Campaign",
+    "Pre30 Collection Call Flow",
+    "30-59 Day Collection Call Flow",
+    "Scheduling a Payment",
+    "Missing Payment"
+  ],
+  "procedures": [
+    {
+      "id": "ESC-001",
+      "heading": "Escrow Analysis - Explaining the EA Statement",
+      "topicIds": [
+        "escrow"
+      ],
+      "category": "Escrow & Payment Changes",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "Compare prior and new monthly amounts in the sample analysis. Explain ongoing tax and insurance\ncosts separately from shortage repayment.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 2,
+      "end": 2,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    },
+    {
+      "id": "ESC-002",
+      "heading": "Escrow – Disbursements, Details, & Balances",
+      "topicIds": [
+        "escrow_balance"
+      ],
+      "category": "Escrow & Payment Changes",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "Review the beginning balance, deposits, disbursements, and adjustments. Record the disputed\ntransaction and prepare research when the figures do not reconcile.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 3,
+      "end": 3,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    },
+    {
+      "id": "ESC-003",
+      "heading": "Escrow Analysis – Customer Paying Shortage",
+      "topicIds": [
+        "shortage"
+      ],
+      "category": "Escrow & Payment Changes",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "In this fictional exercise, verify the sample shortage amount and available options. For the\ndemonstration only, confirm the requested allocation before proceeding.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 4,
+      "end": 4,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    },
+    {
+      "id": "OB-001",
+      "heading": "Payment Shock Campaign",
+      "topicIds": [
+        "escrow"
+      ],
+      "category": "Outbound",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "Confirm the purpose of the outreach and explain the payment change using the sample analysis. Ask\nwhich concern the customer would like to address.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 5,
+      "end": 5,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    },
+    {
+      "id": "OB-002",
+      "heading": "Pre30 Collection Call Flow",
+      "topicIds": [
+        "ob_05_29"
+      ],
+      "category": "Outbound",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "Use the approved opening in a real environment. For this test, review current payment activity before\nchoosing a payment or assistance subject. Campaign labels do not establish account status.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 6,
+      "end": 6,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    },
+    {
+      "id": "OB-003",
+      "heading": "30-59 Day Collection Call Flow",
+      "topicIds": [
+        "ob_30_59"
+      ],
+      "category": "Outbound",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "Review current account status and any existing assistance activity. Confirm the reason for the\nconversation before presenting the applicable next step.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 7,
+      "end": 7,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    },
+    {
+      "id": "PAY-001",
+      "heading": "Scheduling a Payment",
+      "topicIds": [
+        "payment"
+      ],
+      "category": "Payments & Automatic Drafts",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "Confirm amount, date, and intended allocation. This sample does not authorize a real transaction or\nsupply a payment authorization script.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 8,
+      "end": 8,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    },
+    {
+      "id": "PAY-002",
+      "heading": "Missing Payment",
+      "topicIds": [
+        "payment_research"
+      ],
+      "category": "Payments & Automatic Drafts",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "Compare payment amount, date, channel, and reference. For this demonstration, explain that research\nis required when the servicing record and reported debit differ.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 9,
+      "end": 9,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    }
+  ]
+}
