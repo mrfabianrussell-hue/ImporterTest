@@ -1,0 +1,636 @@
+{
+  "schema": "agentos-knowledge-v1",
+  "release": "Fictional intent routing test",
+  "reviewer": "Sample fixture author — fictional test only",
+  "exportedAt": "2026-09-10T00:00:00Z",
+  "document": {
+    "fileName": "sample-manual-v1.pdf",
+    "sha256": "f03a31a79dc039b2f488d9ad91f086a5f72f9b6e8ae5aae7679fe90f8aaf5191",
+    "pages": 9
+  },
+  "detectedHeadings": [
+    "AgentOS sample flight manual",
+    "FICTIONAL CONTENT - IMPORTER TEST ONLY",
+    "Escrow Analysis - Explaining the EA Statement",
+    "Escrow – Disbursements, Details, & Balances",
+    "Escrow Analysis – Customer Paying Shortage",
+    "Payment Shock Campaign",
+    "Pre30 Collection Call Flow",
+    "30-59 Day Collection Call Flow",
+    "Scheduling a Payment",
+    "Missing Payment"
+  ],
+  "procedures": [
+    {
+      "id": "ESC-001",
+      "heading": "Escrow Analysis - Explaining the EA Statement",
+      "topicIds": [
+        "escrow"
+      ],
+      "category": "Escrow & Payment Changes",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "Compare prior and new monthly amounts in the sample analysis. Explain ongoing tax and insurance\ncosts separately from shortage repayment.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 2,
+      "end": 2,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    },
+    {
+      "id": "ESC-002",
+      "heading": "Escrow – Disbursements, Details, & Balances",
+      "topicIds": [
+        "escrow_balance"
+      ],
+      "category": "Escrow & Payment Changes",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "Review the beginning balance, deposits, disbursements, and adjustments. Record the disputed\ntransaction and prepare research when the figures do not reconcile.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 3,
+      "end": 3,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    },
+    {
+      "id": "ESC-003",
+      "heading": "Escrow Analysis – Customer Paying Shortage",
+      "topicIds": [
+        "shortage"
+      ],
+      "category": "Escrow & Payment Changes",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "In this fictional exercise, verify the sample shortage amount and available options. For the\ndemonstration only, confirm the requested allocation before proceeding.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 4,
+      "end": 4,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    },
+    {
+      "id": "OB-001",
+      "heading": "Payment Shock Campaign",
+      "topicIds": [
+        "escrow"
+      ],
+      "category": "Outbound",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "Confirm the purpose of the outreach and explain the payment change using the sample analysis. Ask\nwhich concern the customer would like to address.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 5,
+      "end": 5,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    },
+    {
+      "id": "OB-002",
+      "heading": "Pre30 Collection Call Flow",
+      "topicIds": [
+        "ob_05_29"
+      ],
+      "category": "Outbound",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "Use the approved opening in a real environment. For this test, review current payment activity before\nchoosing a payment or assistance subject. Campaign labels do not establish account status.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 6,
+      "end": 6,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    },
+    {
+      "id": "OB-003",
+      "heading": "30-59 Day Collection Call Flow",
+      "topicIds": [
+        "ob_30_59"
+      ],
+      "category": "Outbound",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "Review current account status and any existing assistance activity. Confirm the reason for the\nconversation before presenting the applicable next step.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 7,
+      "end": 7,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    },
+    {
+      "id": "PAY-001",
+      "heading": "Scheduling a Payment",
+      "topicIds": [
+        "payment"
+      ],
+      "category": "Payments & Automatic Drafts",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "Confirm amount, date, and intended allocation. This sample does not authorize a real transaction or\nsupply a payment authorization script.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 8,
+      "end": 8,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    },
+    {
+      "id": "PAY-002",
+      "heading": "Missing Payment",
+      "topicIds": [
+        "payment_research"
+      ],
+      "category": "Payments & Automatic Drafts",
+      "aliases": [],
+      "status": "reviewed",
+      "text": "Compare payment amount, date, channel, and reference. For this demonstration, explain that research\nis required when the servicing record and reported debit differ.\nReview checkpoint\nVerify that this complete section appears in the importer. No real customer, loan, payment, or policy\ninformation is included.",
+      "start": 9,
+      "end": 9,
+      "summary": "",
+      "url": "",
+      "change": "new"
+    }
+  ],
+  "intentRoutes": [
+    {
+      "id": "legacy-0",
+      "name": "intent · escrow",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "payment_increase",
+        "escrow"
+      ],
+      "active": true,
+      "articleIds": [
+        "ESC-001",
+        "OB-001"
+      ],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-1",
+      "name": "intent · shortage",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "escrow_shortage",
+        "shortage"
+      ],
+      "active": true,
+      "articleIds": [
+        "ESC-003"
+      ],
+      "mode": "primary",
+      "primaryId": "ESC-003"
+    },
+    {
+      "id": "legacy-2",
+      "name": "intent · payment",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "make_payment",
+        "payment"
+      ],
+      "active": true,
+      "articleIds": [
+        "PAY-001"
+      ],
+      "mode": "primary",
+      "primaryId": "PAY-001"
+    },
+    {
+      "id": "legacy-3",
+      "name": "intent · payment research",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "payment_research",
+        "missing_payment"
+      ],
+      "active": true,
+      "articleIds": [
+        "PAY-002"
+      ],
+      "mode": "primary",
+      "primaryId": "PAY-002"
+    },
+    {
+      "id": "legacy-4",
+      "name": "intent · taxes",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "property_taxes",
+        "taxes"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-5",
+      "name": "intent · insurance",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "homeowners_insurance",
+        "insurance"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-6",
+      "name": "intent · fees",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "fees"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-7",
+      "name": "intent · damage",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "damage"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-8",
+      "name": "intent · pmi",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "pmi"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-9",
+      "name": "intent · arm",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "arm"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-10",
+      "name": "intent · payoff",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "payoff"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-11",
+      "name": "intent · assumption",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "assumption"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-12",
+      "name": "intent · statement",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "statement"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-13",
+      "name": "intent · contact",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "contact"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-14",
+      "name": "intent · lossmit",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "lossmit"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-15",
+      "name": "intent · forbearance",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "forbearance"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-16",
+      "name": "intent · bankruptcy",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "bankruptcy"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-17",
+      "name": "intent · deceased",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "deceased"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-18",
+      "name": "intent · fraud",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "fraud"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-19",
+      "name": "intent · complaint",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "complaint"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-20",
+      "name": "intent · online",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "online"
+      ],
+      "active": true,
+      "articleIds": [],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-21",
+      "name": "intent · ob 05 29",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "ob_05_29"
+      ],
+      "active": true,
+      "articleIds": [
+        "OB-002"
+      ],
+      "mode": "primary",
+      "primaryId": "OB-002"
+    },
+    {
+      "id": "legacy-22",
+      "name": "intent · ob 30 59",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "ob_30_59"
+      ],
+      "active": true,
+      "articleIds": [
+        "OB-003"
+      ],
+      "mode": "primary",
+      "primaryId": "OB-003"
+    },
+    {
+      "id": "legacy-23",
+      "name": "intent · escrow balance",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "escrow_balance"
+      ],
+      "active": true,
+      "articleIds": [
+        "ESC-002"
+      ],
+      "mode": "primary",
+      "primaryId": "ESC-002"
+    },
+    {
+      "id": "legacy-24",
+      "name": "OBCampaignName · escrow",
+      "parameter": "OBCampaignName",
+      "match": "exact",
+      "values": [
+        "Payment Shock"
+      ],
+      "active": true,
+      "articleIds": [
+        "OB-001"
+      ],
+      "mode": "primary",
+      "primaryId": "OB-001"
+    },
+    {
+      "id": "legacy-25",
+      "name": "OBCampaignName · ob 05 29",
+      "parameter": "OBCampaignName",
+      "match": "exact",
+      "values": [
+        "05 29 dpd"
+      ],
+      "active": true,
+      "articleIds": [
+        "OB-002"
+      ],
+      "mode": "primary",
+      "primaryId": "OB-002"
+    },
+    {
+      "id": "legacy-26",
+      "name": "OBCampaignName · ob 30 59",
+      "parameter": "OBCampaignName",
+      "match": "exact",
+      "values": [
+        "30 59 dpd"
+      ],
+      "active": true,
+      "articleIds": [
+        "OB-003"
+      ],
+      "mode": "primary",
+      "primaryId": "OB-003"
+    },
+    {
+      "id": "legacy-27",
+      "name": "IBUtterance · payment",
+      "parameter": "IBUtterance",
+      "match": "exact",
+      "values": [
+        "need to make a payment",
+        "i need to make a payment",
+        "i want to make a payment",
+        "make a payment"
+      ],
+      "active": true,
+      "articleIds": [
+        "PAY-001"
+      ],
+      "mode": "primary",
+      "primaryId": "PAY-001"
+    },
+    {
+      "id": "legacy-28",
+      "name": "IBUtterance · escrow balance",
+      "parameter": "IBUtterance",
+      "match": "exact",
+      "values": [
+        "escrow balance is wrong",
+        "my escrow balance is wrong",
+        "my escrow balance is incorrect"
+      ],
+      "active": true,
+      "articleIds": [
+        "ESC-002"
+      ],
+      "mode": "primary",
+      "primaryId": "ESC-002"
+    },
+    {
+      "id": "legacy-29",
+      "name": "IBUtterance · escrow",
+      "parameter": "IBUtterance",
+      "match": "exact",
+      "values": [
+        "why did my payment go up",
+        "my payment went up",
+        "my mortgage payment increased"
+      ],
+      "active": true,
+      "articleIds": [
+        "ESC-001",
+        "OB-001"
+      ],
+      "mode": "choices",
+      "primaryId": ""
+    },
+    {
+      "id": "legacy-30",
+      "name": "IBUtterance · payment research",
+      "parameter": "IBUtterance",
+      "match": "exact",
+      "values": [
+        "my payment is missing",
+        "my payment is not showing",
+        "i was charged twice"
+      ],
+      "active": true,
+      "articleIds": [
+        "PAY-002"
+      ],
+      "mode": "primary",
+      "primaryId": "PAY-002"
+    },
+    {
+      "id": "legacy-31",
+      "name": "IBUtterance · shortage",
+      "parameter": "IBUtterance",
+      "match": "exact",
+      "values": [
+        "i want to pay my escrow shortage",
+        "i need to pay my escrow shortage"
+      ],
+      "active": true,
+      "articleIds": [
+        "ESC-003"
+      ],
+      "mode": "primary",
+      "primaryId": "ESC-003"
+    },
+    {
+      "id": "demo-escrow-help",
+      "name": "Escrow help",
+      "parameter": "intent",
+      "match": "exact",
+      "values": [
+        "escrow_help"
+      ],
+      "active": true,
+      "articleIds": [
+        "ESC-001",
+        "ESC-003",
+        "ESC-002"
+      ],
+      "mode": "primary",
+      "primaryId": "ESC-001"
+    }
+  ]
+}
