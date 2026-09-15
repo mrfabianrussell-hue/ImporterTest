@@ -300,7 +300,7 @@ byId('readPdf').onclick=async()=>{
 };
 byId('cancelRead').onclick=()=>{cancelled=true;visualTask?.cancel()};
 function migrateExactDocumentLinks(){syncRelationships();if(baseline?.document?.sha256!==pdfHash)return;for(const l of relationshipDraft){for(const [idField,visualField] of [['sourceId','sourceVisual'],['targetId','targetVisual']]){const p=baseline.procedures.find(p=>p.id===l[idField]),r=results[l[idField]];if(!l[visualField]&&p&&r?.decision==='reviewed'&&r.start===p.start&&r.end===p.end&&KnowledgeCore.canonical(p.text)===KnowledgeCore.canonical(r.text))l[visualField]=r.visualSignature||'';}}}
-function draftSnapshot(){syncRelationships();return {schema:'agentos-admin-draft-v1',intentRoutes:exportIntentRoutes(),appVersion:'2.25',savedAt:new Date().toISOString(),release:byId('release').value,reviewer:byId('reviewer').value,manualUrl:byId('manualUrl').value,mappings,baseline,results,lines,pageInfo,active,pdfHash,fileName,packEditing,relationshipDraft,previousPdfName:previousPdfFile&&!baseline?previousPdfFile.name:''};}
+function draftSnapshot(){syncRelationships();return {schema:'agentos-admin-draft-v1',intentRoutes:exportIntentRoutes(),appVersion:'2.26',savedAt:new Date().toISOString(),release:byId('release').value,reviewer:byId('reviewer').value,manualUrl:byId('manualUrl').value,mappings,baseline,results,lines,pageInfo,active,pdfHash,fileName,packEditing,relationshipDraft,previousPdfName:previousPdfFile&&!baseline?previousPdfFile.name:''};}
 function validateDraft(d){
  IntentRouting.validate(d?.intentRoutes);
  const bad=()=>{throw Error('This draft has invalid or incomplete review data.')};
